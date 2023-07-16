@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IChat Realtime Node Socket.io Chat App</title>
-    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
-    <script src="js/client.js"></script>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -13,13 +13,13 @@
         <img src="assets/chat logo.png" alt="Chat Application Logo" class="logo">
     </nav>
     <div class="container">
-        <div class="message right">You: How are you</div>
-        <div class="message left">Friend: Fine! What About you</div>
+        <!-- <div class="message right">You: How are you</div>
+        <div class="message left">Friend: Fine! What About you</div> -->
     </div>
     <div class="send">
         <form action="#" id="sent-container">
-            <input type="text" name="messageInp" id="messageInp">
-            <button class="btn" type="submit">✔</button>
+            <input type="text" name="messageInput" id="messageInput">
+            <button class="btn" type="submit" id="submit">✔</button>
         </form>
     </div>
 </body>
